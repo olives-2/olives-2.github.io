@@ -1,0 +1,516 @@
+/*Nav*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: #2e3440;
+    font-family: 'Roboto';
+    overflow: auto;
+}
+
+#name-wrap {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 1.5%;
+    text-align: center;
+    background-color: #bf616a;
+    transition: all .3s;
+}
+
+#name-wrap h1 {
+    font-family: "Lilita One";
+    font-weight: 900;
+    font-size: 1.6em;
+    transition: .5s all;
+}
+
+#name-wrap:hover>h1 {
+    animation: name-anim .6s;
+    transition: all;
+}
+
+@keyframes name-anim {
+    50% {
+        font-weight: 450;
+        transform: scale(85%);
+    }
+
+    100% {
+        font-weight: 900;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#top-nav {
+    width: 100%;
+    display: flex;
+    background-color: #81a1c1;
+}
+
+#top-nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#top-nav li {
+    width: 20%;
+}
+
+#top-nav a {
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5%;
+    border-radius: 100px;
+    width: 100%;
+    text-align: center;
+    filter: drop-shadow(2px 2px 1px #000000);
+    transition: 0.2s all;
+    text-decoration: none;
+}
+
+#top-nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    filter: none;
+}
+
+
+#name-wrap ion-icon {
+    display: none;
+}
+
+#bottom-nav {
+    display: none;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    flex-flow: column;
+    background-color: #81a1c1;
+    backdrop-filter: blur(2px);
+}
+
+#bottom-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#bottom-nav a {
+    margin: 1%;
+}
+
+#bottom-nav ion-icon {
+    font-size: 1.5em;
+    color: #E5E9F0;
+    filter: drop-shadow(0px 0px 15px #E5E9F055);
+}
+
+.title {
+    font-family: 'Lilita One';
+    font-weight: 750;
+    background-color: #d08770;
+    text-align: center;
+    padding: 1.3%;
+    margin: 0%;
+}
+
+
+/*Presentation*/
+
+.main {
+    margin-top: 75px;
+    margin-bottom: 85px;
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(141deg, rgba(76, 86, 106, 1) 0%, rgba(235, 203, 139, 1) 50%, rgba(208, 135, 112, 1) 100%);
+    background-size: 400%;
+    animation: gradient 10s infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#presentation>div {
+    filter: brightness(100%);
+    color: white;
+    background-color: #00000055;
+    min-width: 80%;
+    min-height: 80%;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 1%;
+    display: flex;
+}
+
+#presentation article {
+    display: flex;
+    flex-flow: column;
+}
+
+#presentation h1 {
+    font-size: 200%;
+}
+
+#presentation p {
+    font-size: 110%;
+}
+
+#presentation>div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#presentation img {
+    width: 20%;
+    height: 100%;
+}
+
+/*Skills*/
+
+#skills {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#skills>img {
+    position: absolute;
+    width: 80%;
+    overflow: overlay;
+    right: 0%;
+    top: 50%;
+    z-index: -1;
+}
+
+#skills>ul {
+    list-style: none;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills>ul ion-icon {
+    font-size: 5em;
+}
+
+#skills>ul img {
+    width: 5em;
+    filter: brightness(500%);
+}
+
+#skills>ul+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    font-size: 120%;
+}
+
+/*Retexes*/
+
+#retexes {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    background: linear-gradient(37deg, rgba(136, 192, 208, 1) 11%, rgba(208, 135, 112, 1) 48%, rgba(46, 52, 64, 1) 100%);
+    background-size: 200%;
+    animation: gradient 5s infinite;
+}
+
+#retexes h1 {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+}
+
+#retexes ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    list-style: none;
+}
+
+#retexes ul a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5%;
+    width: 45%;
+    height: 20vh;
+    transition: 0.3s all;
+    overflow: hidden;
+    border-radius: 35px;
+    background-color: #E5E9F000;
+}
+
+#retexes ul a h1 {
+    font-size: 200%;
+    width: 100%;
+}
+
+#retexes ul a h2 {
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#retexes ul h1,
+#retexes ul h2 {
+    filter: drop-shadow(2px 2px 2px #2e3440);
+}
+
+ul {
+    padding: 0;
+}
+
+#retexes ul a img {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    transition: all 0.3s ease-in-out;
+}
+
+#retexes ul a:hover {
+    background-color: #E5E9F066;
+    outline: 1px solid #E5E9F0;
+}
+
+#retexes ul a:hover>img {
+    transform: translate(75%);
+    filter: brightness(100%);
+}
+
+/*Contacts*/
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+}
+
+#contacts ion-icon {
+    font-size: 3em;
+    transition: 0.2s;
+    color: #ffffff;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#contacts ion-icon:hover {
+    transform: scale(130%);
+}
+
+footer {
+    text-align: center;
+}
+
+footer a,
+#contacts a {
+    text-decoration: none;
+    color: #5e81ac;
+}
+
+
+#form-wrapper {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+form {
+    font-family: "Lilita One";
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    background-color: #3b4252;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #3b4252;
+}
+
+form h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    background-color: #2e3440;
+    color: white;
+    font-weight: 800;
+    outline: 0;
+    border: 0;
+    padding: 1%;
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    align-self: center;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+form #name {
+    display: flex;
+    padding: 0;
+    gap: 15px;
+}
+
+
+form textarea {
+    height: 220px;
+}
+
+form button {
+    width: 100%;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #5e81ac;
+    color: white;
+    cursor: pointer;
+    transition: .1s;
+    box-shadow: none;
+}
+
+form button:hover {
+    box-shadow: 0px 0px 10px #5e81ac;
+}
+
+form input:focus,
+form textarea:focus {
+    font-size: larger;
+    box-shadow: 0px 0px 15px #2e3440;
+}
+
+@media (max-width: 715px) {
+
+    #presentation div {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #presentation div img {
+        width: 50%;
+        align-self: center;
+    }
+
+    #presentation>div {
+        width: 100%;
+    }
+
+    #presentation img {
+        width: 1%;
+    }
+
+    #presentation p {
+        width: 100%;
+    }
+
+    #bottom-nav {
+        display: flex;
+    }
+
+    #top-nav {
+        display: none;
+    }
+
+    #name-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #retexes ul a {
+        width: 95%;
+        font-size: 80%;
+        height: 100%;
+    }
+
+    #retexes ul li:hover>img {
+        transform: translate(90%);
+    }
+
+    #name-wrap ion-icon {
+        display: block;
+        position: relative;
+        left: 5%
+    }
+}

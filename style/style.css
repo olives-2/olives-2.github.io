@@ -277,6 +277,7 @@ nav a {
     justify-content: center;
     position: relative;
     z-index: 1;
+    width: 100%;
     list-style: none;
 }
 
@@ -336,6 +337,44 @@ ul {
 #retexes ul a:hover>img {
     transform: translate(75%);
     filter: brightness(100%);
+}
+
+.retex-class {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.separator {
+    width: 30%;
+    height: 1vh;
+    border-radius: 100px;
+}
+
+#retexes-nav{
+    text-decoration: none;
+    color: white;
+    background-color: #81a1c1;
+    height: 2.5em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#retexes-nav img{
+    width: 1.5em;
+}
+
+
+#java .separator {
+    background: linear-gradient(141deg, #E5E9F0 0%, #DA1E20 60%, #1288C2 100%);
+    box-shadow: 0px 0px 10px #1288C2;
+}
+
+#sys .separator{
+    background: linear-gradient(141deg, #E5E9F0 0%, #181B28 60%, #66AF3D 100%);
+    box-shadow: 0px 0px 10px #66AF3D;
 }
 
 /*Contacts*/

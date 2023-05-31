@@ -62,7 +62,9 @@
                 <li><ion-icon name="logo-html5"></ion-icon></li>
                 <li><ion-icon name="logo-css3"></ion-icon></li>
                 <li><img src="media/img/sql.png" alt="SQL"></li>
-                <li><h1>.NET</h1></li>
+                <li>
+                    <h1>.NET</h1>
+                </li>
             </ul>
             <ul>
                 <li>Développement de logiciels en Java pour des besoins spécifiques
@@ -85,61 +87,95 @@
         <h1 class="title">Retours d'expérience</h1>
 
         <div id="retexes">
-            <h1>Voici les retours d'expérience</h1>
-            <ul>
-                <a href="retexes/Odomo.pdf" target="_blank">
-                    <img src="https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Clouds">
-                    <h1>Station météo</h1>
-                    <h2>Développement d'un appareil domotique pour données météorologiques, gestion de chauffage et
-                        jardin
-                    </h2>
-                </a>
-                <a href="retex/biosphere7.html" target="_blank">
-                    <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg" alt="Nature">
-                    <h1>Biosphere7</h1>
-                    <h2>Implémentation de règles d'un jeu de plateau et d'une IA pour ce dernier</h2>
-                </a>
-                <a>
-                    <img src="media/img/retexes/vm/vm.png" alt="Linux Mint">
-                    <h1>BUT Games</h1>
-                    <h2>Installation et paramétrage d'une machine virtuelle sous Linux</h2>
-                </a>
-                <a>
-                    <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Data center">
-                    <h1>billetconcert.fr</h1>
-                    <h2>Conception et création d'une base de données pour recueil d'événements musicaux</h2>
-                </a>
-                <a>
-                    <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Code HTML">
-                    <h1>Développement web</h1>
-                    <h2>Développement d'un site web pour le rapport du retour 6</h2>
-                </a>
-                <a>
-                    <img src="https://images.pexels.com/photos/233698/pexels-photo-233698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Bureaux">
-                    <h1>Atos</h1>
-                    <h2>Analyse fonctionnelle et du macroenvironnement d'une entreprise</h2>
-                </a>
-                <a href="retex/jpo.html">
-                    <img src="https://images.pexels.com/photos/233698/pexels-photo-233698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Bureaux">
-                    <h1>Journée Portes Ouvertes</h1>
-                    <h2>Préparation d'un atelier pour la Journée Portes Ouvertes de l'IUT</h2>
-                </a>
-                <a href="retex/ncloud.html">
-                    <img src="../media/img/retexes/s2.03.png" alt="topologie du réseau">
-                    <h1>Nextcloud</h1>
-                    <h2>Rédaction d'un tutoriel technique pour configuration de services réseaux</h2>
-                </a>
-                <a>
-                    <img src="media/img/retexes/s2.03.png" alt="Hyperstellar">
-                    <h1>Hyperstellar</h1>
-                    <h2>Développement de version numérique de jeu de société et d'architecture logicielle</h2>
-                </a>
-            </ul>
+            
+            <nav id="retexes-nav">
+                <a href="#java"><img src="https://upload.wikimedia.org/wikipedia/fr/2/2e/Java_Logo.svg" alt = "Développement Java"></a>
+                <a href="#sys"><ion-icon name="+"></a>
+                <a href="#ihm">ihm</a>
+                <a href="#data">data</a>
+                <a href="#web">Dev web</a>
+            </nav>
+
+
+            <div class="retex-class" id="java">
+                <h2>Développement Java</h2>
+                <div class="separator"></div>
+                <ul>
+                    <a href="retexes/Odomo.pdf" target="_blank">
+                        <img src="https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Clouds">
+                        <h1>Station météo</h1>
+                        <h2>Développement d'un appareil domotique pour données météorologiques, gestion de chauffage et
+                            jardin
+                        </h2>
+                    </a>
+                    <a href="retex/biosphere7.html" target="_blank">
+                        <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg" alt="Nature">
+                        <h1>Biosphere7</h1>
+                        <h2>Implémentation de règles d'un jeu de plateau et d'une IA pour ce dernier</h2>
+                    </a>
+                    <a href="retex/jpo.html">
+                        <img src="https://images.pexels.com/photos/233698/pexels-photo-233698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Bureaux">
+                        <h1>Journée Portes Ouvertes</h1>
+                        <h2>Préparation d'un atelier pour la Journée Portes Ouvertes de l'IUT</h2>
+                    </a>
+                </ul>
+            </div>
+            <div class="retex-class" id="sys">
+                <h2>Systèmes</h2>
+                <div class="separator"></div>
+                <ul>
+                    <a>
+                        <img src="media/img/retexes/vm/vm.png" alt="Linux Mint">
+                        <h1>BUT Games</h1>
+                        <h2>Installation et paramétrage d'une machine virtuelle sous Linux</h2>
+                    </a>
+                    <a href="retex/ncloud.html">
+                        <img src="../media/img/retexes/s2.03.png" alt="topologie du réseau">
+                        <h1>Nextcloud</h1>
+                        <h2>Rédaction d'un tutoriel technique pour configuration de services réseaux</h2>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="retex-class" id="ihm">
+                <h2>Applications graphiques</h2>
+                <div class="separator"></div>
+                <ul>
+                    <a>
+                        <img src="media/img/retexes/s2.03.png" alt="Hyperstellar">
+                        <h1>Hyperstellar</h1>
+                        <h2>Développement de version numérique de jeu de société et d'architecture logicielle</h2>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="retex-class" id="data">
+                <h2>Base de données</h2>
+                <div class="separator"></div>
+                <ul>
+                    <a>
+                        <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Data center">
+                        <h1>billetconcert.fr</h1>
+                        <h2>Conception et création d'une base de données pour recueil d'événements musicaux</h2>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="retex-class" id="web">
+                <h2>Développement web</h2>
+                <div class="separator"></div>
+                <ul>
+                    <a>
+                        <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Code HTML">
+                        <h1>Développement web</h1>
+                        <h2>Développement d'un site web pour le rapport du retour 6</h2>
+                    </a>
+                </ul>
+            </div>
         </div>
 
         <h1 class="title">Contacts</h1>
@@ -155,7 +191,8 @@
         </div>
 
         <footer>
-            Site web réalisé par Matis Olives, étudiant du <a href="https://www.iut.u-bordeaux.fr/info/" target="_blank">département
+            Site web réalisé par Matis Olives, étudiant du <a href="https://www.iut.u-bordeaux.fr/info/"
+                target="_blank">département
                 informatique de l'IUT de Bordeaux</a>.
         </footer>
 

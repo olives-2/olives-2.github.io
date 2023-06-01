@@ -226,30 +226,34 @@ nav a {
     z-index: -1;
 }
 
-#skills>ul {
+#skills ul {
     list-style: none;
-    width: 20%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+#skills p{
+    width: 60%;
+}
+
+#skills ul li{
     display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1%;
 }
 
-#skills>ul ion-icon {
-    font-size: 5em;
+#skills ul ion-icon {
+    font-size: 3em;
 }
 
-#skills>ul img {
-    width: 5em;
+#skills ul img {
+    width: 3em;
     filter: brightness(500%);
-}
-
-#skills>ul+ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 80%;
-    font-size: 100%;
 }
 
 /*Retexes*/

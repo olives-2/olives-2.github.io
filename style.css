@@ -188,14 +188,14 @@ nav a {
 #presentation article {
     display: flex;
     flex-flow: column;
-}
+}   
 
 #presentation h1 {
     font-size: 200%;
 }
 
 #presentation p {
-    font-size: 2vw;
+    font-size: 1.3vw;
 }
 
 #presentation>div {

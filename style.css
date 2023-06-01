@@ -195,7 +195,7 @@ nav a {
 }
 
 #presentation p {
-    font-size: 110%;
+    font-size: 2vw;
 }
 
 #presentation>div {
@@ -249,7 +249,7 @@ nav a {
     justify-content: space-around;
     align-items: flex-start;
     width: 80%;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 /*Retexes*/
@@ -410,7 +410,7 @@ ul {
 
 #contacts ion-icon {
     font-size: 3em;
-    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.2s transform cubic-bezier(0.075, 0.82, 0.165, 1);
     color: #ffffff;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -536,10 +536,12 @@ form textarea:focus {
 
     #presentation p {
         width: 100%;
+        font-size: 4vw;
     }
 
     #bottom-nav {
         display: flex;
+        justify-content: center;
     }
 
     #top-nav {

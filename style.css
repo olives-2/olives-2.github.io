@@ -371,28 +371,28 @@ ul {
 
 /*Defines the separators in the dividers*/
 #java .separator {
-    background: linear-gradient(141deg, #E5E9F0 0%, #DA1E20 60%, #1288C2 100%);
-    box-shadow: 0px 0px 10px #1288C2;
+    background: linear-gradient(141deg, #E5E9F0DD 0%, #DA1E20 60%, #1288C2 100%);
+    box-shadow: 0px 0px 15px #1288C2;
 }
 
 #sys .separator{
-    background: linear-gradient(141deg, #E5E9F0 0%, #181B28 60%, #66AF3D 100%);
-    box-shadow: 0px 0px 10px #66AF3D;
+    background: linear-gradient(141deg, #E5E9F0DD 0%, #181B28 60%, #66AF3D 100%);
+    box-shadow: 0px 0px 15px #66AF3D;
 }
 
 #ihm .separator{
-    background: linear-gradient(141deg, #E5E9F0 0%, #9370DB 60%, #6295CB 100%);
-    box-shadow: 0px 0px 10px #6295CB;
+    background: linear-gradient(141deg, #E5E9F0DD 0%, #9370DB 60%, #6295CB 100%);
+    box-shadow: 0px 0px 15px #6295CB;
 }
 
 #data .separator{
-    background: linear-gradient(141deg, #E5E9F0 0%, #954248 60%, #1184C0 100%);
-    box-shadow: 0px 0px 10px #1184C0;
+    background: linear-gradient(141deg, #E5E9F0DD 0%, #954248 60%, #1184C0 100%);
+    box-shadow: 0px 0px 15px #1184C0;
 }
 
 #web .separator{
-    background: linear-gradient(141deg, #E5E9F0 0%, #2862E9 60%, #E96228 100%);
-    box-shadow: 0px 0px 10px #E96228;   
+    background: linear-gradient(141deg, #E5E9F0DD 0%, #2862E9 60%, #E96228 100%);
+    box-shadow: 0px 0px 15px #E96228;   
 }
 
 /*Contacts*/

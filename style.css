@@ -35,7 +35,7 @@ body {
     transition: .5s all;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
@@ -188,7 +188,7 @@ nav a {
 #presentation article {
     display: flex;
     flex-flow: column;
-}   
+}
 
 #presentation h1 {
     font-size: 200%;
@@ -234,11 +234,11 @@ nav a {
 
 }
 
-#skills p{
+#skills p {
     width: 60%;
 }
 
-#skills ul li{
+#skills ul li {
     display: flex;
     text-align: center;
     align-items: center;
@@ -354,7 +354,7 @@ ul {
     border-radius: 100px;
 }
 
-#retexes-nav{
+#retexes-nav {
     text-decoration: none;
     color: white;
     background-color: #81a1c1;
@@ -365,34 +365,34 @@ ul {
     align-items: center;
 }
 
-#retexes-nav img{
+#retexes-nav img {
     width: 1.5em;
 }
 
 /*Defines the separators in the dividers*/
 #java .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #DA1E20 60%, #1288C2 100%);
-    box-shadow: 0px 0px 15px #1288C2;
+    box-shadow: 0px 0px 10px #1288C2;
 }
 
-#sys .separator{
+#sys .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #181B28 60%, #66AF3D 100%);
-    box-shadow: 0px 0px 15px #66AF3D;
+    box-shadow: 0px 0px 10px #66AF3D;
 }
 
-#ihm .separator{
+#ihm .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #9370DB 60%, #6295CB 100%);
-    box-shadow: 0px 0px 15px #6295CB;
+    box-shadow: 0px 0px 10px #6295CB;
 }
 
-#data .separator{
+#data .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #954248 60%, #1184C0 100%);
-    box-shadow: 0px 0px 15px #1184C0;
+    box-shadow: 0px 0px 10px #1184C0;
 }
 
-#web .separator{
+#web .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #2862E9 60%, #E96228 100%);
-    box-shadow: 0px 0px 15px #E96228;   
+    box-shadow: 0px 0px 10px #E96228;
 }
 
 /*Contacts*/
@@ -429,7 +429,8 @@ footer {
 }
 
 footer a,
-#contacts a, p a{
+#contacts a,
+p a {
     text-decoration: none;
     color: #5e81ac;
 }
@@ -482,7 +483,7 @@ form #name {
     padding: 0;
     gap: 15px;
     justify-content: center;
-}   
+}
 
 form textarea {
     height: 220px;
@@ -515,7 +516,7 @@ form textarea:focus {
 
 @media (max-width: 872px) {
 
-    .main{
+    .main {
         margin-top: 35px;
         margin-bottom: 85px;
     }
@@ -553,7 +554,7 @@ form textarea:focus {
         display: none;
     }
 
-    header{
+    header {
         height: 5%;
     }
 

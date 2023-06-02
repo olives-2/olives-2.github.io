@@ -30,7 +30,7 @@ body {
 
 #name-wrap h1 {
     font-family: "Lilita One";
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.6em;
     transition: .5s all;
 }
@@ -46,12 +46,12 @@ nav ul{
 
 @keyframes name-anim {
     50% {
-        font-weight: 350;
+        font-weight: 100;
         transform: scale(70%);
     }
 
     100% {
-        font-weight: 700;
+        font-weight: 500;
     }
 }
 
@@ -137,7 +137,7 @@ nav a {
 
 .title {
     font-family: 'Lilita One';
-    font-weight: 650;
+    font-weight: 300;
     background-color: #d08770;
     text-align: center;
     padding: 1.3%;

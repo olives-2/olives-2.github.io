@@ -211,47 +211,21 @@ nav a {
 
 /*Skills*/
 
-#skills {
+#skills{
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-#skills>img {
-    position: absolute;
-    width: 80%;
-    overflow: overlay;
-    right: 0%;
-    top: 50%;
-    z-index: -1;
-}
-
-#skills ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
+    justify-content: center;    
 }
 
 #skills p {
     width: 60%;
-}
-
-#skills ul li {
-    display: flex;
     text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 1%;
 }
 
-#skills ul ion-icon {
+#skills ion-icon {
     font-size: 3em;
 }
 
-#skills ul img {
+#skills img {
     width: 3em;
     filter: brightness(500%);
 }

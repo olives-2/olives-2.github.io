@@ -98,8 +98,9 @@ nav a {
     text-decoration: none;
 }
 
-#top-nav a:hover {
+#top-nav a:focus, #top-nav a:hover {
     background-color: #000000;
+    outline: none;
     color: #ffffff;
     filter: none;
 }
@@ -214,6 +215,13 @@ nav a {
 #skills{
     display: flex;
     justify-content: center;    
+}
+
+#skills tr, #skills td{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #skills p {

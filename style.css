@@ -98,7 +98,8 @@ nav a {
     text-decoration: none;
 }
 
-#top-nav a:focus, #top-nav a:hover {
+#top-nav a:focus,
+#top-nav a:hover {
     background-color: #000000;
     outline: none;
     color: #ffffff;
@@ -212,20 +213,26 @@ nav a {
 
 /*Skills*/
 
-#skills{
+#skills {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
-#skills tr, #skills td{
+#skills tr,
+#skills td {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#skills td{
+    display: flex;
+    justify-content: center;
+}
+
 #skills p {
-    width: 60%;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -234,8 +241,8 @@ nav a {
 }
 
 #skills img {
+    margin: 0.5em;
     width: 3em;
-    filter: brightness(500%);
 }
 
 /*Retexes*/
@@ -462,10 +469,12 @@ form textarea {
 
 form #name {
     display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 0;
     gap: 15px;
-    justify-content: center;
 }
+
 
 form textarea {
     height: 220px;

@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+    margin-top: 1%;
     width: 100%;
     color: #ffffff;
     background-color: #2e3440;
@@ -90,8 +91,9 @@ nav a {
     background-color: #ffffff;
     color: #000000;
     padding: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
     border-radius: 100px;
-    width: 100%;
     text-align: center;
     filter: drop-shadow(2px 2px 1px #000000);
     transition: 0.2s all;
@@ -106,7 +108,7 @@ nav a {
     filter: none;
 }
 
-#name-wrap ion-icon {
+#name-wrap i {
     display: none;
 }
 
@@ -131,7 +133,7 @@ nav a {
     margin: 1%;
 }
 
-#bottom-nav ion-icon {
+#bottom-nav i {
     font-size: 1.5em;
     color: #E5E9F0;
     filter: drop-shadow(0px 0px 15px #E5E9F055);
@@ -236,7 +238,7 @@ nav a {
     text-align: center;
 }
 
-#skills ion-icon {
+#skills i {
     font-size: 3em;
 }
 
@@ -321,12 +323,12 @@ ul {
     transition: all 0.3s ease-in-out;
 }
 
-#retexes ul a:hover {
+#retexes ul a:hover, #retexes ul a:focus {
     background-color: #E5E9F066;
     outline: 1px solid #E5E9F0;
 }
 
-#retexes ul a:hover>img {
+#retexes ul a:hover>img, #retexes ul a:focus>img {
     transform: translate(75%);
     filter: brightness(100%);
 }
@@ -401,7 +403,7 @@ ul {
     list-style: none;
 }
 
-#contacts ion-icon {
+#contacts i {
     font-size: 3em;
     transition: 0.2s transform cubic-bezier(0.075, 0.82, 0.165, 1);
     color: #ffffff;
@@ -409,7 +411,7 @@ ul {
     margin-right: 0.5em;
 }
 
-#contacts ion-icon:hover {
+#contacts i:hover {
     transform: scale(130%);
 }
 
@@ -423,7 +425,6 @@ p a {
     text-decoration: none;
     color: #5e81ac;
 }
-
 
 #form-wrapper {
     margin: 1%;
@@ -477,7 +478,7 @@ form #name {
 
 
 form textarea {
-    height: 220px;
+    height: 10em;
 }
 
 form button {
@@ -491,21 +492,26 @@ form button {
     background-color: #5e81ac;
     color: white;
     cursor: pointer;
-    transition: .1s;
+    transition: .1s all;
     box-shadow: none;
 }
 
-form button:hover {
+form button:hover, form button:focus {
     box-shadow: 0px 0px 10px #5e81ac;
 }
 
 form input:focus,
 form textarea:focus {
-    font-size: larger;
+    transform: scale(105%);
     box-shadow: 0px 0px 15px #2e3440;
 }
 
 /*Retex page*/
+
+#top-nav .pdf{
+    background-color: #F46039;
+    color: #ffffff;
+}
 
 #title{
     margin-top: 4%;
@@ -516,13 +522,34 @@ form textarea:focus {
 }
 
 #title h1{
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
-#title separator{
-    width: 100px;
-    height: 1vh;
-    background-color: #000000;
+#sections{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.section{
+    background-color: #3D334E;
+    border-radius: 20px;
+    margin: 0.5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.section h2{
+    font-size: 1em;
+}
+
+.section li{
+    font-size: 0.8em;
 }
 
 @media (max-width: 872px) {
@@ -587,7 +614,7 @@ form textarea:focus {
         transform: translate(90%);
     }
 
-    #name-wrap ion-icon {
+    #name-wrap i {
         display: block;
         position: relative;
         left: 5%

@@ -232,7 +232,6 @@ table{
 #skills td {
     width: 100%;
     display: flex;
-    flex-flow: row-wrap;
     justify-content: center;
     align-items: center;
 }
@@ -243,6 +242,7 @@ table{
 
 #skills td{
     display: flex;
+    flex-flow: row wrap;
     justify-content:center;
 }
 

@@ -2,6 +2,6 @@
 
 Ce dépôt contient les fichiers de mon Portfolio... C'est tout.
 
-# Mentions légales
+## Mentions légales
 
-La quasi entièreté des images provient de [pexels](https://www.pexels.com/fr-fr/). Les icônes proviennent en majeure partie de l'API [Fontawesome](https://fontawesome.com).
+La quasi entièreté des images provient de [pexels](https://www.pexels.com/fr-fr/). Les icônes proviennent en majeure partie de l'API [Nerd Fonts](https://www.nerdfonts.com).

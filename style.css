@@ -7,6 +7,18 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
+
+#background{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    filter: blur(15px) brightness(60%);
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     margin-top: 1%;
@@ -535,9 +547,24 @@ form textarea:focus {
     font-size: 1.5em;
 }
 
+#screenshots{
+    display: flex;
+    justify-content: center;
+}
+
+#screenshots img{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 25%;
+}
+
+
+
 #sections{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
     padding: 0;
     margin: 0;
@@ -559,7 +586,7 @@ form textarea:focus {
 }
 
 .section li{
-    font-size: 0.8em;
+    font-size: 70%;
 }
 
 @media (max-width: 872px) {
@@ -628,5 +655,9 @@ form textarea:focus {
         display: block;
         position: relative;
         left: 5%
+    }
+
+    #sections{
+        flex-flow: column wrap;
     }
 }

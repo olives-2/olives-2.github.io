@@ -576,7 +576,7 @@ form textarea:focus {
     margin: 0.5%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 45%;
 }
@@ -585,8 +585,9 @@ form textarea:focus {
     font-size: 1em;
 }
 
-.section li{
-    font-size: 70%;
+.section ul{
+    font-size: 100%;
+    padding: 0.1%;
 }
 
 @media (max-width: 872px) {

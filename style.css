@@ -2,29 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
+@import url('style/colors-nord.css');
+
+:root{
+    --my-bezier: cubic-bezier(.11, 1.09, .6, .96);
+}
+
 html {
     margin: 0;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     position: relative;
-}
-
-#background{
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    filter: blur(15px) brightness(60%);
-    overflow: hidden;
+    background: linear-gradient(141deg, var(--color9) 0%, var(--color14) 50%, var(--color9) 100%);
+    background-size: 400%;
+    animation: gradient 15s infinite var(--my-bezier);
 }
 
 body {
     margin: 0;
     margin-top: 1%;
     width: 100%;
-    color: #ffffff;
-    background-color: #2e3440;
+    color: var(--color6);
+    background-color: var(--color0);
     font-family: 'Roboto';
     overflow: auto;
 }
@@ -38,7 +39,7 @@ body {
     width: 25%;
     padding: 1.5%;
     text-align: center;
-    background-color: #bf616a;
+    background-color: var(--color11);
     transition: all .3s;
 }
 
@@ -54,7 +55,7 @@ nav ul {
 }
 
 #name-wrap:hover>h1 {
-    animation: name-anim .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: name-anim .6s var(--my-bezier);
     transition: all;
 }
 
@@ -85,7 +86,7 @@ nav a {
 #top-nav {
     width: 100%;
     display: flex;
-    background-color: #81a1c1;
+    background-color: var(--color3);
 }
 
 #top-nav ul {
@@ -101,23 +102,23 @@ nav a {
 
 #top-nav a {
     display: block;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--color4);
+    color: var(--color0);
     padding: 5%;
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 100px;
     text-align: center;
-    filter: drop-shadow(2px 2px 1px #000000);
+    filter: drop-shadow(2px 2px 1px var(--color0));
     transition: 0.2s all;
     text-decoration: none;
 }
 
 #top-nav a:focus,
 #top-nav a:hover {
-    background-color: #000000;
+    background-color: var(--color0);
     outline: none;
-    color: #ffffff;
+    color: var(--color4);
     filter: none;
 }
 
@@ -132,7 +133,7 @@ nav a {
     position: fixed;
     bottom: 0;
     flex-flow: column;
-    background-color: #81a1c1;
+    background-color: var(--color3);
     backdrop-filter: blur(2px);
 }
 
@@ -148,14 +149,13 @@ nav a {
 
 #bottom-nav i {
     font-size: 1.5em;
-    color: #E5E9F0;
-    filter: drop-shadow(0px 0px 15px #E5E9F055);
+    color: var(--color5);
 }
 
 .title {
     font-family: 'Lilita One';
     font-weight: 500;
-    background-color: #d08770;
+    background-color: var(--color12);
     text-align: center;
     padding: 1.3%;
     margin: 0%;
@@ -166,14 +166,6 @@ nav a {
 
 .main {
     margin-top: 75px;
-}
-
-#presentation {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(141deg, rgba(76, 86, 106, 1) 0%, rgba(235, 203, 139, 1) 50%, rgba(208, 135, 112, 1) 100%);
-    background-size: 400%;
-    animation: gradient 10s infinite;
 }
 
 @keyframes gradient {
@@ -190,45 +182,43 @@ nav a {
     }
 }
 
-#presentation>div {
-    filter: brightness(100%);
+#presentation {
     color: white;
-    background-color: #00000055;
-    min-width: 80%;
-    min-height: 80%;
-    border-radius: 25px;
-    padding: 2%;
-    margin: 1%;
+    backdrop-filter: brightness(80%);
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #presentation article {
     display: flex;
     flex-flow: column;
+    padding: 3%;
 }
 
 #presentation h1 {
-    font-size: 200%;
+    font-size: 250%;
 }
 
 #presentation p {
-    font-size: 1.3vw;
+    font-size: 150%;
 }
 
-#presentation>div {
-    display: flex;
-    flex-direction: column;
+#presentation article{
     width: 50%;
 }
 
 #presentation img {
     width: 20%;
-    height: 100%;
+    padding: 2%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px var(--color0));
 }
 
 /*Skills*/
 
-table{
+table {
     width: 100%;
     margin: 0;
 }
@@ -238,24 +228,26 @@ table{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color0);
 }
 
 #skills tr,
 #skills td {
     width: 100%;
+    padding: 0.3%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#skills tr:nth-child(even){
-    background-color: #3b4252;
+#skills tr:nth-child(even) {
+    background-color: var(--color1);
 }
 
-#skills td{
+#skills td {
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content: center;
 }
 
 #skills p {
@@ -275,9 +267,7 @@ table{
     padding: 0;
     width: 100%;
     display: inline-block;
-    background: linear-gradient(37deg, #81A1C1 50%, #BF616A 100%);
-    background-size: 400%;
-    animation: gradient 5s infinite;
+    backdrop-filter: brightness(90%);
 }
 
 #retexes h1 {
@@ -285,6 +275,10 @@ table{
     position: relative;
     z-index: 1;
     font-weight: 600;
+}
+
+#retexes h2{
+    filter: drop-shadow(0px 0px 10px var(--color1));
 }
 
 #retexes ul {
@@ -299,7 +293,7 @@ table{
 
 #retexes ul a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color6);
     position: relative;
     z-index: 1;
     display: flex;
@@ -311,7 +305,6 @@ table{
     transition: 0.3s all;
     overflow: hidden;
     border-radius: 35px;
-    background-color: #E5E9F000;
 }
 
 #retexes ul a h1 {
@@ -326,7 +319,7 @@ table{
 
 #retexes ul h1,
 #retexes ul h2 {
-    filter: drop-shadow(2px 2px 2px #2e3440);
+    filter: drop-shadow(2px 2px 2px var(--color0));
 }
 
 ul {
@@ -341,15 +334,17 @@ ul {
     width: 100%;
     height: 100%;
     filter: brightness(50%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s var(--my-bezier);
 }
 
-#retexes ul a:hover, #retexes ul a:focus {
-    background-color: #E5E9F066;
-    outline: 1px solid #E5E9F0;
+#retexes ul a:hover,
+#retexes ul a:focus {
+    background-color: var(--color3);
+    outline: 1px solid var(--color5);
 }
 
-#retexes ul a:hover>img, #retexes ul a:focus>img {
+#retexes ul a:hover>img,
+#retexes ul a:focus>img {
     transform: translate(75%);
     filter: brightness(100%);
 }
@@ -362,14 +357,14 @@ ul {
 
 .separator {
     width: 30%;
-    height: 1vh;
-    border-radius: 100px;
+    height: 0.5em;
+    border-radius: 100rem;
 }
 
 #retexes-nav {
     text-decoration: none;
     color: white;
-    background-color: #81a1c1;
+    background-color: var(--color9);
     height: 2.5em;
     font-size: 1.5em;
     display: flex;
@@ -384,22 +379,18 @@ ul {
 /*Defines the separators in the dividers*/
 #java .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #DA1E20 60%, #1288C2 100%);
-    box-shadow: 0px 0px 10px #1288C2;
 }
 
 #sys .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #181B28 60%, #66AF3D 100%);
-    box-shadow: 0px 0px 10px #66AF3D;
 }
 
 #ihm .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #9370DB 60%, #6295CB 100%);
-    box-shadow: 0px 0px 10px #6295CB;
 }
 
 #data .separator {
     background: linear-gradient(141deg, #E5E9F0DD 0%, #954248 60%, #1184C0 100%);
-    box-shadow: 0px 0px 10px #1184C0;
 }
 
 #web .separator {
@@ -413,6 +404,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--color0);
 }
 
 #contacts ul {
@@ -427,8 +419,8 @@ ul {
 #contacts i {
     display: inline-block;
     font-size: 3em;
-    transition: 0.2s transform cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: #ffffff;
+    transition: 0.2s transform var(--my-bezier);
+    color: var(--color6);
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
@@ -438,6 +430,7 @@ ul {
 }
 
 footer {
+    background-color: var(--color0);
     text-align: center;
 }
 
@@ -445,7 +438,7 @@ footer a,
 #contacts a,
 p a {
     text-decoration: none;
-    color: #5e81ac;
+    color: var(--color10);
 }
 
 #form-wrapper {
@@ -486,7 +479,7 @@ form textarea {
     width: 100%;
     height: 50px;
     align-self: center;
-    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all .5s var(--my-bezier);
     resize: none;
 }
 
@@ -518,7 +511,8 @@ form button {
     box-shadow: none;
 }
 
-form button:hover, form button:focus {
+form button:hover,
+form button:focus {
     box-shadow: 0px 0px 10px #5e81ac;
 }
 
@@ -530,12 +524,12 @@ form textarea:focus {
 
 /*Retex page*/
 
-#top-nav .pdf{
+#top-nav .pdf {
     background-color: #F46039;
     color: #ffffff;
 }
 
-#title{
+#title {
     margin-top: 4%;
     display: flex;
     justify-content: center;
@@ -543,24 +537,22 @@ form textarea:focus {
     flex-flow: column wrap;
 }
 
-#title h1{
+#title h1 {
     font-size: 1.5em;
 }
 
-#screenshots{
+#screenshots {
     display: flex;
     justify-content: center;
 }
 
-#screenshots img{
+#screenshots img {
     margin-left: 2%;
     margin-right: 2%;
     width: 25%;
 }
 
-
-
-#sections{
+#sections {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -570,7 +562,7 @@ form textarea:focus {
     margin: 0;
 }
 
-.section{
+.section {
     background-color: #3D334E;
     border-radius: 20px;
     margin: 0.5%;
@@ -581,11 +573,11 @@ form textarea:focus {
     width: 45%;
 }
 
-.section h2{
+.section h2 {
     font-size: 1em;
 }
 
-.section ul{
+.section ul {
     font-size: 100%;
     padding: 0.1%;
 }
@@ -597,28 +589,19 @@ form textarea:focus {
         margin-bottom: 85px;
     }
 
-    #presentation div {
+    #presentation{
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
     }
 
-    #presentation div img {
-        width: 35%;
-        align-self: center;
-    }
-
-    #presentation>div {
-        width: 100%;
-    }
-
     #presentation img {
-        width: 1%;
+        width: 20%;
+        padding: 2%;
     }
 
-    #presentation p {
-        width: 100%;
-        font-size: 4vw;
+    #presentation article{
+        width: 90%;
     }
 
     #bottom-nav {
@@ -632,7 +615,7 @@ form textarea:focus {
 
     header {
         height: 5%;
-        
+
     }
 
     #name-wrap {
@@ -658,7 +641,7 @@ form textarea:focus {
         left: 5%
     }
 
-    #sections{
+    #sections {
         flex-flow: column wrap;
     }
 }

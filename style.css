@@ -231,9 +231,12 @@ table {
     background-color: var(--color0);
 }
 
+#skills td{
+    width: 100%;
+}
+
 #skills tr,
 #skills td {
-    width: 100%;
     padding: 0.3%;
     display: flex;
     justify-content: center;
@@ -467,8 +470,12 @@ form h1 {
     font-weight: 600;
 }
 
+form div{
+    margin: 0%;
+}
+
 form input,
-form textarea {
+form textarea{
     background-color: #2e3440;
     color: white;
     font-weight: 800;

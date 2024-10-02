@@ -78,12 +78,6 @@ header {
     display: flex;
 }
 
-.dummy{
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
 nav a {
     text-decoration: none;
 }
@@ -185,17 +179,18 @@ nav a {
 
 #presentation {
     color: white;
-    backdrop-filter: brightness(80%);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15%;
 }
 
 #presentation article {
     display: flex;
     flex-flow: column;
     padding: 3%;
+    filter: drop-shadow(0px 0px 10px var(--color0));
 }
 
 #presentation h1 {
@@ -326,7 +321,7 @@ table {
     align-items: center;
     margin: 0.5%;
     width: 45%;
-    height: 25vh;
+    height: 10em;
     transition: 0.3s all;
     overflow: hidden;
     border-radius: 35px;

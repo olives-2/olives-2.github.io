@@ -1,7 +1,3 @@
-# Portfolio
+# My Links
 
-Ce dépôt contient les fichiers de mon Portfolio.
-
-## Mentions légales
-
-La quasi entièreté des images provient de [pexels](https://www.pexels.com/fr-fr/). Les icônes proviennent en majeure partie de l'API [Nerd Fonts](https://www.nerdfonts.com).
+This repository contains the root of my GitHub Pages site. The root has a list of links, most notably to my portfolio and social networks.

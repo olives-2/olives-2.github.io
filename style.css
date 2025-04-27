@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Roboto;
 }
 
 body{
     background-color: #181825;
     display: flex;
+    flex-flow: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -37,13 +42,13 @@ body{
     color: #3D8BB5;
     text-decoration: none;
     padding: 1rem;
-    background-color: #a3acdd;
+    background-color: #45475a;
     border-radius: 1rem;
     color: #cdd6f4;
     transition: all 0.3s;
 }
 
 .button:hover{
-    background-color: #b4befe;
+    background-color: #585b70;
 }
 
